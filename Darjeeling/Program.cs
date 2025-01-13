@@ -68,6 +68,7 @@ public class Program
         // Bot Related Services
         services.AddSingleton(serviceProvider => serviceProvider.GetRequiredService<IOptions<AppConfiguration>>().Value);
         services.AddSingleton<IPermissionHelpers, PermissionHelpers>();
+        services.AddSingleton<ILodestoneApi, LodestoneApi>();
 
         
         // Intents
